@@ -1,0 +1,68 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 20rem;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.status {
+  min-height: 1.5em;
+  font-weight: 600;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border: 2px solid currentColor;
+  border-radius: 0.5rem;
+  background: none;
+  cursor: pointer;
+  aspect-ratio: 1;
+}
+
+.cell:disabled {
+  cursor: default;
+}
+
+.cell.winning {
+  background: rgba(80, 200, 120, 0.35);
+}
+
+.score {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.95rem;
+}

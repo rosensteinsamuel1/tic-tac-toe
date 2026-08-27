@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Tic-Tac-Toe</h1>
+
+    <div class="controls">
+      <label for="difficulty">Difficulty</label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="new-game">New Game</button>
+    </div>
+
+    <p id="status" class="status" role="status"></p>
+
+    <div id="board" class="board"></div>
+
+    <div class="score">
+      <span>Wins: <strong id="score-wins">0</strong></span>
+      <span>Losses: <strong id="score-losses">0</strong></span>
+      <span>Ties: <strong id="score-ties">0</strong></span>
+    </div>
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
